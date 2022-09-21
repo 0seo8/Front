@@ -31,7 +31,7 @@ const TodayLank = ({ category }) => {
         {list.map((item, index) => (
           <div key={index}>
             <div
-              className="w-[225px] h-[260px] bg-cover relative rounded-md"
+              className="new-style w-[225px] h-[260px] bg-cover relative rounded-md"
               style={{
                 backgroundImage: `url(${item.url})`,
               }}

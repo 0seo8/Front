@@ -27,7 +27,7 @@ const NewStyle = ({ category }) => {
         {list.map((item, index) => (
           <div key={index} className="item__list">
             <div
-              className="item w-[50vw] h-[50vw]  max-w-[300px] max-h-[300px] bg-cover"
+              className="item w-[50vw] h-[50vw] max-w-[300px] max-h-[300px] bg-cover"
               style={{
                 backgroundImage: `url(${item.imgUrl})`,
               }}

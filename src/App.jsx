@@ -21,7 +21,7 @@ function App() {
   const location = useLocation()
   const currentPath = location.pathname
   return (
-    <div className="pb-[64px]">
+    <div className="pb-[75px]">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/category" element={<Category />} />
@@ -31,7 +31,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/product" element={<Product />} />
 
-        {/*실제사용 아래 임시 <Route path="/product/:id" element={<DetailPage />} /> */}
+        {/*실제사용 아래 임시 <Route path="/product/detail/:id" element={<DetailPage />} /> */}
         <Route path="/product/detail" element={<ProductDetail />} />
 
         <Route path="/signup" element={<SignUp />}>
@@ -43,7 +43,9 @@ function App() {
         </Route>
         <Route path="/cart" element={<Cart />} />
       </Routes>
-      {!currentPath.includes('/signup') && <NavBottom />}
+      {!currentPath.includes('/signup') && !currentPath.includes('/detail') && (
+        <NavBottom />
+      )}
     </div>
   )
 }
