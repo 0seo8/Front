@@ -1,26 +1,39 @@
 import React, { useState, useEffect } from 'react'
 import HeaderLink from './HeaderLink'
+import BackIcon from '../../common/BackIcon'
+import { cls } from '../../../utils'
 import Logo from './Logo'
-import { ReactComponent as BackIcon } from '/public/assets/back-on.svg'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
-function Header() {
+function Header(props) {
   const location = useLocation()
   const currentPath = location.pathname
+  const navigate = useNavigate()
   return (
-    <>
-      <header className="border-b-2 border-primary fixed w-full h-14 bg-white top-0 z-50 box-shadow-custom">
-        <div className="relative flex justify-center items-center text-center pr-5 pl-3 h-full ">
-          {currentPath === '/' ? (
-            <Logo className="absolute z-50" />
-          ) : (
-            <BackIcon />
-          )}
-          <div className="flex-grow"></div>
-          <HeaderLink />
+    <div
+      className={cls(
+        `w-full max-w-[600px] h-16 flex fixed top-0 items-center bg-white z-40 box-border ${props.className} `,
+        currentPath === '/' && 'border-b-2 border-primary',
+      )}
+    >
+      <div className="w-full h-16 max-w-[600px] px-5 flex items-center">
+        {currentPath === '/' ? (
+          <Logo />
+        ) : (
+          !props.back && (
+            <BackIcon
+              size="24"
+              fill={cls(props.fill ? '#000' : '#D86145')}
+              onClick={() => navigate(-1)}
+            />
+          )
+        )}
+        <div className="flex-grow font-bold text-xl">{props.children}</div>
+        <div className="mr-[1.75px]">
+          <HeaderLink searchNone={props.searchNone} />
         </div>
-      </header>
-    </>
+      </div>
+    </div>
   )
 }
 

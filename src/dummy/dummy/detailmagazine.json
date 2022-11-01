@@ -1,0 +1,187 @@
+// id는 상품 테이블 id입니다. 아직 상품 id를 몰라 위에 상품 명 적어두었어요~
+//(상품테이블에 디테일 상품 정보 클릭시 해당 매거진 필터링위한 컬럼?이필요할것 같아요)
+// 매거진의 경우 현재 맨/우먼/라이프/한국트랜드로 바뀔때마다 바뀌어야하는데,
+// 일단 맨/우먼만 한다고 생각하고 옵션 1: 여자 ,  2: 남자, 3: 공통으로 넣어놨어요
+
+[
+  {
+    "option": 1,
+    "title": "Magazine NO.9 ",
+    "cover": "https://ifh.cc/g/KC4trp.png",
+    "thumbnail": ["https://ifh.cc/g/1JPtKk.jpg", "https://ifh.cc/g/9n2HZf.jpg"],
+    "brandImg": "https://aroundann.jp/web/upload/category/editor/2021/11/03/34113214691ad533e76facd4df88e8d3.png",
+    "brand": "aroundAnn",
+    "brandKo": "어라운드앤",
+    "liked": false,
+    "items": [
+      {
+        //troi bag_black
+        "id": 1000,
+        "className": "top-[250px] left-[100px]"
+      },
+      {
+        //Wrinkle bag_ivory
+        "id": 1001,
+        "className": "top-[900px] right-[30px]"
+      },
+      {
+        //Wrinkle bag_ivory
+        "id": 1001,
+        "className": "bottom-[1400px] right-[70px]"
+      },
+      {
+        //Double bag_brown
+        "id": 1002,
+        "className": "bottom-[570px] left-[120px]"
+      }
+    ]
+  },
+  {
+    "option": 1,
+    "title": "Magazine NO.8 ",
+    "cover": "https://ifh.cc/g/cYWvgh.jpg",
+    "thumbnail": [
+      "https://ifh.cc/g/mnM2v8.jpg",
+      "https://ifh.cc/g/cgVfWV.jpg",
+      "https://ifh.cc/g/38lJb3.jpg"
+    ],
+    "brandImg": "https://aroundann.jp/web/upload/category/editor/2021/11/03/34113214691ad533e76facd4df88e8d3.png",
+    "brand": "aroundAnn",
+    "brandKo": "어라운드앤",
+    "liked": false,
+    "items": [
+      {
+        //Ami bag_black
+        "id": 1003,
+        "className": "top-[1030px] left-[140px]"
+      },
+      {
+        //Wrinkle bag_ivory
+        "id": 1001,
+        "className": "top-[1120px] right-[85px]"
+      },
+      {
+        //Sally bag_ivory
+        "id": 1004,
+        "className": "bottom-[580px] left-[90px]"
+      },
+      {
+        //Sally bag_ivory
+        "id": 1004,
+        "className": "bottom-[120px] right-[80px]"
+      }
+    ]
+  },
+  {
+    "option": 1,
+    "title": "Magazine NO.7 ",
+    "cover": "https://ifh.cc/g/gs9flK.jpg",
+    "thumbnail": [
+      "https://ifh.cc/g/5j6XAD.jpg",
+      "http://asq.kr/Y1olLQQsLH",
+      "http://asq.kr/xP7b9Oi5k"
+    ],
+    "brandImg": "https://ifh.cc/g/LKYFDb.png",
+    "brand": "KUME",
+    "brandKo": "쿠메",
+    "liked": false,
+    "items": [
+      {
+        //상품명 : TWEED BOMBER JACKET, BLACK
+        "id": 111,
+        "className": "top-[1964px] right-[42px]"
+      },
+      {
+        //상품명 : FRAYED SEMI-WIDE DENIM PANTS, BLACK
+        "id": 112,
+        "className": "top-[2032px] left-[194px]"
+      },
+      {
+        //상품명 : FRAYED SEMI-WIDE DENIM PANTS, IVORY
+        "id": 113,
+        "className": "top-[3281px] left-[189px]"
+      },
+      {
+        //상품명 :DOUBLE POCKET DENIM BLOUSE, MEDIUM BLUE
+        "id": 114,
+        "className": "top-[3485px] left-[154px]"
+      }
+    ]
+  },
+  {
+    "option": 3,
+    "title": "Magazine NO.6",
+    "cover": "https://ifh.cc/g/F5Vh3Y.jpg",
+    "thumbnail": ["https://ifh.cc/g/hjcVnc.jpg"],
+    "brandImg": "https://ifh.cc/g/rqCx2r.png",
+    "brand": "LUCKY LE MATCH",
+    "brandKo": "럭키 르 매치",
+    "liked": false,
+    "items": []
+  },
+  {
+    "option": 2,
+    "title": "Magazine NO.6",
+    "cover": "https://ifh.cc/g/RF7j5L.jpg",
+    "thumbnail": [
+      "https://image.wconcept.co.kr/images/img/event/20220919_city/mo_01-2.jpg",
+      "https://image.wconcept.co.kr/images/img/event/20220919_city/mo_02.jpg",
+      "https://image.wconcept.co.kr/images/img/event/20220919_city/mo_04.jpg"
+    ],
+    "brandImg": "https://ifh.cc/g/FxTvCy.png",
+    "brand": "CITYBREEZE for MEN",
+    "brandKo": "시티브리즈 포 맨",
+    "liked": false,
+    "items": [
+      {
+        //상품명에 맞춰 ID 수정 부탁드려요~
+        //상품명 : 스티치 포인트 데님 자켓_INDIGO
+        "id": 211,
+        "className": "top-[1300px] right-[152px]"
+      },
+      {
+        //상품명 : 알파카 오버핏 카라 니트_BEIGE
+        "id": 212,
+        "className": "top-[3032px] right-[10px]"
+      },
+      {
+        //상품명 : [22CW] 알파카 오버핏 니트 가디건 _BLACK
+        "id": 213,
+        "className": "top-[3281px] left-[159px]"
+      },
+      {
+        //상품명 로고 자수 베이직 후드 스웻 셔츠_MELANGE GREY
+        "id": 214,
+        "className": "bottom-[300px] left-[154px]"
+      }
+    ]
+  },
+  {
+    "option": 2,
+    "title": "Magazine NO.5",
+    "cover": "https://ifh.cc/g/MdfR22.jpg",
+    "thumbnail": ["https://ifh.cc/g/RgF64m.jpg", "https://ifh.cc/g/x3WpZL.jpg"],
+    "brandImg": "https://blog.kakaocdn.net/dn/b1wXtr/btqy9FuRasZ/cDK7B3KaFX42XUkytKjKW0/img.jpg",
+    "brand": "ONITSUKA TIGER",
+    "brandKo": "오니츠카 타이거",
+    "liked": false,
+    "items": [
+      {
+        "id": 311, //멕시코 66 사봇 1183A707_103
+        "className": "top-[1250px] left-[86px]"
+      },
+      {
+        "id": 312, //멕시코 66 사봇 1183A707_103
+        "className": "top-[1244px] left-[196px]"
+      },
+      {
+        "id": 313,
+        "className": "top-[1745px] left-[200px]"
+      },
+      {
+        "id": 314,
+        "className": "top-[2045px] left-[210px]"
+      }
+    ]
+  }
+]

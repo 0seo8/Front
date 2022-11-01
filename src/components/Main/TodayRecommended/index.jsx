@@ -1,6 +1,5 @@
 import React from 'react'
-import { ReactComponent as LikeIcon } from '/public/assets/heart.svg'
-import { ReactComponent as LikeIconOn } from '/public/assets/heart-on.svg'
+import HeartIcon from '../../common/HeartIcon'
 import {
   womanRecommended,
   manRecommended,
@@ -26,44 +25,42 @@ const TodayRecommended = ({ category }) => {
     default:
       return
   }
-
-  console.log('here', list.img1)
   return (
     <div>
       <h3 className="font-bold text-xl mb-5 pl-5">
         <strong className="text-primary">오늘</strong>의 추천브랜드
       </h3>
-      <div className="grid grid-cols-2 grid-rows-3 border-t-2 border-b-2 border-primary">
-        <div
-          className="col-span-2 border-b-2 border-primary h-[226px] bg-cover"
-          style={{
-            backgroundImage: `url(${list.img1})`,
-          }}
-        ></div>
-        <div className="row-span-2 border-b-2 border-primary border-r-2 text-color-800 text-xl">
-          <p className="text-[12px] p-4">{list.desc}</p>
+      {list.map(({ img1, desc, img2, img3, liked, brand }, idx) => (
+        <div className="mt-[38px]" key={idx}>
+          <div
+            className="h-[226px] border-primary border-t-2 bg-cover"
+            style={{
+              backgroundImage: `url(${img1})`,
+            }}
+          ></div>
+          <div className="grid grid-cols-2 grid-rows-2 border-y-2 border-b-2 border-primary">
+            <div className="row-span-2 border-primary border-b-2 border-r-2 text-color-800 text-xl">
+              <p className="text-[12px] p-4">{desc}</p>
+            </div>
+            <div
+              className="border-b-2 border-primary bg-cover"
+              style={{
+                backgroundImage: `url(${img2})`,
+              }}
+            ></div>
+            <div
+              className="border-b-2 border-primary bg-cover"
+              style={{
+                backgroundImage: `url(${img3})`,
+              }}
+            ></div>
+            <div className="col-span-2 pl-5 pr-5 pt-2 pb-2 flex justify-between items-center">
+              <span className="text-sm font-bold">{brand}</span>
+              <HeartIcon size="20px" off={liked} fill={'#000'} />
+            </div>
+          </div>
         </div>
-        <div
-          className="border-b-2 border-primary bg-cover"
-          style={{
-            backgroundImage: `url(${list.img2})`,
-          }}
-        ></div>
-        <div
-          className="border-b-2 border-primary bg-cover"
-          style={{
-            backgroundImage: `url(${list.img3})`,
-          }}
-        ></div>
-        <div className="col-span-2 pl-5 pr-5 pt-2 pb-2 flex justify-between items-center">
-          <span className="text-sm text-primary font-bold">{list.brand}</span>
-          {list.liked ? (
-            <LikeIconOn style={{ width: '20px' }} />
-          ) : (
-            <LikeIcon style={{ width: '20px' }} />
-          )}
-        </div>
-      </div>
+      ))}
     </div>
   )
 }

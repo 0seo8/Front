@@ -1,9 +1,11 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import Button from '../../components/common/Button'
+import { useSignupMutation } from '../../store/api/authApiSlice'
 
 const Finish = () => {
   const navigate = useNavigate()
+
   const loginHandler = () => {
     // api전송로직 추가
     navigate('/login')

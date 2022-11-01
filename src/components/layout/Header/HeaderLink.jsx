@@ -1,33 +1,43 @@
 import React from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import { ReactComponent as SearchIcon } from '/public/assets/search_icon.svg'
-import { ReactComponent as CartIcon } from '/public/assets/bag.svg'
-import { ReactComponent as Home } from '/public/assets/homeIcon.svg'
+import CartIcon from '../../common/CartIcon'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
+import SearchIcon from '../../common/SearchIcon'
+// import { ReactComponent as Home } from '/public/assets/homeIcon.svg'
+import HomeIcon from '../../common/HomeIcon'
 
-const HeaderLink = () => {
+const HeaderLink = ({ searchNone }) => {
   const location = useLocation()
   const currentPath = location.pathname
-
+  const navigate = useNavigate()
   return (
-    <ul className=" top-2.5 right-5 flex justify-center items-center h-9 z-50 ">
-      <li className="mr-3.5 ">
-        <Link to="/search">
-          <SearchIcon className="w-6 " alt="검색" />
-        </Link>
-      </li>
-      <li>
-        <Link to="/cart">
-          <CartIcon />
-        </Link>
-      </li>
-      {useLocation === '/product/detail' && (
-        <li>
-          <Link to="/">
-            <Home />
-          </Link>
-        </li>
+    <div className="flex justify-center items-center gap-3">
+      {!currentPath.includes('/my') && !currentPath.includes('/faq') && (
+        <SearchIcon size="30" onClick={() => navigate('/search')} />
       )}
-    </ul>
+      {!currentPath.includes('/cart') &&
+        !currentPath.includes('/oneul') &&
+        !currentPath.includes('/edit-user-info') &&
+        !currentPath.includes('/my/qna') &&
+        !currentPath.includes('/faq') && <CartIcon />}
+      {!currentPath.includes('/product') &&
+        !currentPath.includes('/oneul') &&
+        currentPath !== '/my' &&
+        currentPath !== '/' &&
+        !currentPath.includes('-list') &&
+        !currentPath.includes('/like') &&
+        !currentPath.includes('/order') &&
+        !currentPath.includes('/recent-view') && (
+          <div className="pl-2">
+            <HomeIcon
+              size="24"
+              fill={
+                currentPath.includes('/edit-user-info') ? '#000' : '#D86145'
+              }
+              onClick={() => navigate('/')}
+            />
+          </div>
+        )}
+    </div>
   )
 }
 

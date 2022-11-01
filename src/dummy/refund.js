@@ -1,0 +1,81 @@
+export const refund = [
+  {
+    id: 1,
+    createdDate: '2022.9.25',
+    requests: '취소',
+    requestsState: '접수',
+    completionDate: '2022.10.09',
+    product: {
+      thumbnail: 'http://asq.kr/XHkPC05q4U',
+      brand: 'KUME',
+      product: 'TWEED BOMBER JACKET, BLACK',
+      price: 1100,
+    },
+  },
+  {
+    id: 2,
+    createdDate: '2022.9.26',
+    requests: '환불',
+    requestsState: '완료',
+    completionDate: '2022.10.3',
+    product: {
+      thumbnail:
+        'https://img.29cm.co.kr/next-product/2021/03/05/d22e8b4eb5fd4d52aa32a65b29b3c25f_20210305180022.jpg?width=300',
+      brand: 'TGT PAISLEY HAIR BAND',
+      product: 'TGT PAISLEY HAIR BAND',
+      price: 1100,
+    },
+  },
+  {
+    id: 3,
+    createdDate: '2022.9.25',
+    requests: '교환',
+    requestsState: '처리중',
+    completionDate: '2022.10.09',
+    product: {
+      thumbnail: 'http://asq.kr/XHkPC05q4U',
+      brand: 'KUME',
+      product: 'TWEED BOMBER JACKET, BLACK',
+      price: 1100,
+    },
+  },
+  {
+    id: 4,
+    createdDate: '2022.9.25',
+    requests: '교환',
+    requestsState: '처리중',
+    completionDate: '2022.10.09',
+    product: {
+      thumbnail: 'http://asq.kr/XHkPC05q4U',
+      brand: 'KUME',
+      product: 'TWEED BOMBER JACKET, BLACK',
+      price: 1100,
+    },
+  },
+  {
+    id: 5,
+    createdDate: '2022.9.25',
+    requests: '반품',
+    requestsState: '처리중',
+    completionDate: '2022.10.09',
+    product: {
+      thumbnail: 'http://asq.kr/XHkPC05q4U',
+      brand: 'KUME',
+      product: 'TWEED BOMBER JACKET, BLACK',
+      price: 1100,
+    },
+  },
+  {
+    id: 6,
+    createdDate: '2022.9.25',
+    requests: '교환',
+    requestsState: '처리중',
+    completionDate: '2022.10.09',
+    product: {
+      thumbnail: 'http://asq.kr/XHkPC05q4U',
+      brand: 'KUME',
+      product: 'TWEED BOMBER JACKET, BLACK',
+      price: 1100,
+    },
+  },
+]

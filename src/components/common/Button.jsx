@@ -6,7 +6,7 @@ const Button = ({ classprop, children, onClick, disabled }) => {
     <div
       onClick={!disabled ? onClick : null}
       className={cls(
-        'font-bold rounded text-xs cursor-pointer  text-center h-[44px] flex items-center justify-center text-center',
+        'font-bold rounded text-xs cursor-pointer h-[44px] flex items-center justify-center text-center',
         classprop && `${classprop}`,
         disabled && 'bg-sub-primary cursor-default',
       )}

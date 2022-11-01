@@ -1,0 +1,38 @@
+[
+  {
+    "id": 11,
+    "tags": "woman",
+    "brand": "어라운드앤",
+    "img1": "https://ifh.cc/g/m2j9JZ.jpg",
+    "img2": "https://ifh.cc/g/abNqxk.jpg",
+    "img3": "https://ifh.cc/g/4fNXaV.jpg",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse "
+  },
+  {
+    "id": 12,
+    "brand": "윌브릴리언트",
+    "img1": "https://img.29cm.co.kr/next-product/2020/10/08/58b43e8961ef404cb86307ff7d3681ac_20201008122852.jpg?width=700",
+    "img2": "https://img.29cm.co.kr/next-product/2020/05/12/c531a0cf89354410976b4248c6a83fc2_20200512121312.jpg?width=700",
+    "img3": "https://img.29cm.co.kr/next-product/2019/11/07/f8dbe259a4f04e1ca709a75e32d6aa52_20191107153205.jpg?width=300",
+    "desc": "THE ONE AND ONLY BRLLIANCE OF THE WORLD IS THE VALUE ONE BRILLIANT AIM FOR. ONE BRILLANT IS THE CONTEAMPORARY EYEWEAR BRAND THAT HAS BEEN DEEPLY INSPIRED BY THE WORLD'S LEADING FASHION, MUSIC ADN ARTS. IT BRIGHTENS YOUR DAILY LIFE BY PROVIDING REASONALE PRICE AND TRENDY DESING."
+  },
+  {
+    "id": 21,
+    "tags": "man",
+    "brand": "WESTERN",
+    "img1": "https://ctbreeze.cafe24.com/ctbrz/22FW%20MENS/INTRO/intro.jpg",
+    "img2": "https://ifh.cc/g/ZtjyTK.jpg",
+    "img3": "https://ifh.cc/g/Lw2701.jpg",
+    "desc": "시티브리즈는 'effortless chic' 무드를 바탕으로 컨템포러리 하이엔드 캐쥬얼 스타일을 선보이는 브랜드이다. 오래 입을 수 있는 기본 아이템이지만 남들과는 다른 특별한 디테일을 담아 낸 디자인에 집중하고 있으며, 공들여 꾸미지 않아도 스타일리한 무드와 시크함을 보여줄 수 있는 아이템을 추구한다."
+  },
+  {
+    "id": 31,
+    "tags": "life",
+    "brand": "onulstore",
+    "img1": "https://ifh.cc/g/Gghdfa.jpg",
+    "img2": "https://ifh.cc/g/XY3HKW.jpg",
+    "img3": "https://onulstore.jp/web/product/medium/202204/e7be25720e74876b0d86371040f95a8a.png",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ",
+    "liked": true
+  }
+]

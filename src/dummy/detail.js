@@ -1,23 +1,30 @@
 export const detailProducts = {
-  main_img: [
+  productId: 11,
+  detailThumList: [
     'https://images.seoulstore.com/products/546e7653a3284eab33eae8d2c1c81675.jpg',
     'https://images.seoulstore.com/products/05114e87573eaa474d88f4f473d8355f.jpg',
   ],
   brand: 'Kirsh',
-  brand_img_url: 'https://ifh.cc/g/nGCNgk.png',
-  product_name: 'BIG CHERRY FLEECE CROP HOOD',
+  brandKo: '키르시',
+  brandImg: 'https://ifh.cc/g/nGCNgk.png',
+  liked: true,
+  productName: 'BIG CHERRY FLEECE CROP HOOD',
   star: 4.5,
-  review_count: 128,
-  discount: 30,
+  reviewCount: 128,
+  sale: 30,
   price: 6500,
-  delivery: 'free',
   color: ['https://ifh.cc/g/Q2DWwQ.png', 'https://ifh.cc/g/33lRxC.png'],
-  desc_url:
+  detailList: [
     'https://images.seoulstore.com/products/97aa4585eda28bfaaa0fe6b9660f5176.jpg',
+  ],
+  thumbnail:
+    'https://images.seoulstore.com/products/546e7653a3284eab33eae8d2c1c81675.jpg',
   magazine: {
-    url: 'http://image.kyobobook.co.kr/images/book/large/327/l4910178330327.jpg',
+    thumbnail:
+      'http://image.kyobobook.co.kr/images/book/large/327/l4910178330327.jpg',
     title: 'NO.05 Cherry heart',
   },
+  size: ['L', 'M', 'S'],
   snap: [
     {
       id: 1,
@@ -37,6 +44,86 @@ export const detailProducts = {
       profile:
         'https://www.cosmeticsdesign-asia.com/var/wrbm_gb_food_pharma/storage/images/publications/cosmetics/cosmeticsdesign-asia.com/headlines/brand-innovation/pilgrim-tapping-into-korean-beauty-trends-and-making-them-accessible-to-domestic-market/12882011-1-eng-GB/Pilgrim-tapping-into-Korean-beauty-trends-and-making-them-accessible-to-domestic-market.jpg',
       liked: 254,
+    },
+  ],
+  another: [
+    {
+      id: 11,
+      thumbnail:
+        'https://img.29cm.co.kr/next-product/2022/08/09/7495d01194a94992a4e6f208151abe9b_20220809164857.jpg?width=300',
+      product: 'GRUNGE STRIPE KNIT SWEATER KA [KHAKI]',
+      price: 370,
+      sale: 4,
+      liked: true,
+    },
+    {
+      id: 12,
+      thumbnail:
+        'https://img.29cm.co.kr/next-product/2021/09/24/a7bf49f4235845c4be4d6b6bbb4b063e_20210924184330.jpg?width=300',
+      product: 'WITTY BUNNY CROP KNIT KA [OLIVE]',
+      price: 720,
+      sale: 5,
+      liked: false,
+    },
+    {
+      id: 13,
+      thumbnail:
+        'https://img.29cm.co.kr/next-product/2022/04/25/5009ad650aa84c6a95f0087f5a648a03_20220425123828.jpg?width=300',
+      product: 'MIDDLE CHERRY KNIT SLIM CARDIGAN [CHARCOAL]',
+      price: 630,
+      sale: 5,
+      liked: false,
+    },
+    {
+      id: 14,
+      thumbnail:
+        'https://img.29cm.co.kr/next-product/2022/04/25/81cbfdccf296407986c514644dac806d_20220425124351.jpg?width=300',
+      product: '체리 숏 슬리브 폴로 니트 [화이트]',
+      price: '620',
+      sale: 4,
+      liked: true,
+    },
+  ],
+  review: {
+    count: 2,
+    reviews: [
+      {
+        id: 1,
+        images: [
+          'https://image.msscdn.net/display/images/usersnap/2022/09/19/0773f97ca12448f8ac8966b3137777e3_main.jpg',
+          'https://ifh.cc/g/GFBkp0.png',
+          'https://ifh.cc/g/G85L5x.png',
+          'https://ifh.cc/g/G85L5x.png',
+        ],
+        member: 'onuel12356',
+        content:
+          '두껍고 따뜻하고 색깔도 화면과 같아요. 사이즈도 넉넉하고 어던옷과 입어도 잘 매치됩니다. 세일해서 저렴하고 구매했어요!',
+        star: 4.5,
+        createdDate: '2022-04-21',
+      },
+      {
+        id: 2,
+        images: [
+          'https://ifh.cc/g/GFBkp0.png',
+          'https://image.msscdn.net/display/images/usersnap/2022/09/19/0773f97ca12448f8ac8966b3137777e3_main.jpg',
+          'https://ifh.cc/g/G85L5x.png',
+          'https://ifh.cc/g/G85L5x.png',
+        ],
+        member: 'onuel12356',
+        content:
+          '데일리로 입기 편한 티셔츠예요 완전 귀엽습니다. 너무 젊은 브랜드 아닐까 생각했지만 귀여우니 그냥 입으려고요',
+        star: 4,
+        createdDate: '2022-04-21',
+      },
+    ],
+  },
+  Inquiry: [
+    {
+      id: 1,
+      date: '2022.09.20',
+      userId: 'onuel12356',
+      category: '배송문의',
+      desc: '한번에 결제하고 각각 다른 주소로 보내고 싶어요',
     },
   ],
   similiar: [
@@ -79,84 +166,6 @@ export const detailProducts = {
       price: 230,
       liked: true,
       discount: 10,
-    },
-  ],
-  another: [
-    {
-      id: 11,
-      imgurl:
-        'https://img.29cm.co.kr/next-product/2022/08/09/7495d01194a94992a4e6f208151abe9b_20220809164857.jpg?width=300',
-      name: 'GRUNGE STRIPE KNIT SWEATER KA [KHAKI]',
-      price: 370,
-      discount: 4,
-      liked: true,
-    },
-    {
-      id: 12,
-      imgurl:
-        'https://img.29cm.co.kr/next-product/2021/09/24/a7bf49f4235845c4be4d6b6bbb4b063e_20210924184330.jpg?width=300',
-      name: 'WITTY BUNNY CROP KNIT KA [OLIVE]',
-      price: 720,
-      discount: 5,
-      liked: false,
-    },
-    {
-      id: 13,
-      imgurl:
-        'https://img.29cm.co.kr/next-product/2022/04/25/5009ad650aa84c6a95f0087f5a648a03_20220425123828.jpg?width=300',
-      name: 'MIDDLE CHERRY KNIT SLIM CARDIGAN [CHARCOAL]',
-      price: 630,
-      discount: 5,
-      liked: false,
-    },
-    {
-      id: 14,
-      imgurl:
-        'https://img.29cm.co.kr/next-product/2022/04/25/81cbfdccf296407986c514644dac806d_20220425124351.jpg?width=300',
-      name: '체리 숏 슬리브 폴로 니트 [화이트]',
-      price: '620',
-      discount: 4,
-      liked: true,
-    },
-  ],
-  review: {
-    count: 128,
-    reviews: [
-      {
-        id: 1,
-        imgUrl: [
-          'https://image.msscdn.net/display/images/usersnap/2022/09/19/0773f97ca12448f8ac8966b3137777e3_main.jpg',
-          'https://ifh.cc/g/GFBkp0.png',
-          'https://ifh.cc/g/G85L5x.png',
-          'https://ifh.cc/g/G85L5x.png',
-        ],
-        userId: 'onuel12356',
-        desc: '두껍고 따뜻하고 색깔도 화면과 같아요. 사이즈도 넉넉하고 어던옷과 입어도 잘 매치됩니다. 세일해서 저렴하고 구매했어요!',
-        star: 4.5,
-        date: '2022-04-21',
-      },
-      {
-        id: 1,
-        imgUrl: [
-          'https://ifh.cc/g/GFBkp0.png',
-          'https://image.msscdn.net/display/images/usersnap/2022/09/19/0773f97ca12448f8ac8966b3137777e3_main.jpg',
-          'https://ifh.cc/g/G85L5x.png',
-          'https://ifh.cc/g/G85L5x.png',
-        ],
-        userId: 'onuel12356',
-        desc: '데일리로 입기 편한 티셔츠예요 완전 귀엽습니다. 너무 젊은 브랜드 아닐까 생각했지만 귀여우니 그냥 입으려고요',
-        star: 4,
-        date: '2022-04-21',
-      },
-    ],
-  },
-  Inquiry: [
-    {
-      id: 1,
-      date: '2022.09.20',
-      userId: 'onuel12356',
-      category: '배송문의',
-      desc: '한번에 결제하고 각각 다른 주소로 보내고 싶어요',
     },
   ],
 }

@@ -1,0 +1,87 @@
+/* signup kakao post API page animation */
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.openPost {
+  animation: slideLeft 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
+}
+
+.closePost {
+  animation: slideLeft 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 reverse forwards;
+}
+
+/* search page searchBar css & animation */
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+.openSearchBar {
+  animation: slideLeft 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
+}
+
+.closeSearchBar {
+  animation: slideLeft 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 reverse forwards;
+}
+
+/* open beauty brand tab in category page */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-25%);
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.openBeauty {
+  animation: slideDown 0.4s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
+}
+
+/* delete searches in recent searches */
+.deleteSearch {
+  animation: slideDown 0.3s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 reverse forwards;
+}
+
+/* loading bounce */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.firstBall {
+  animation: bounce 0.7s infinite;
+}
+
+.secondBall {
+  animation: bounce 0.7s 0.15s infinite;
+}
+
+.thirdBall {
+  animation: bounce 0.7s 0.3s infinite;
+}

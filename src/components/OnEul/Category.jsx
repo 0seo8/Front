@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { cls } from '../../utils'
 import TodayLank from './TodayLank'
-import NewStyle from './NewStyle'
+import TodaySurge from './TodaySurge'
 const list = ['인기', '최신', '팔로잉']
 
 const Category = () => {
@@ -18,8 +18,9 @@ const Category = () => {
               key={index}
               onClick={() => changeCategory(item)}
               className={cls(
+                'leading-2',
                 select === item
-                  ? 'text-white font-bold'
+                  ? 'text-white font-bold border-b-2 border-white'
                   : 'text-white-200 font-normal',
               )}
             >
@@ -28,8 +29,8 @@ const Category = () => {
           ))}
         </ul>
       </div>
-      <TodayLank category={select} />
-      <NewStyle category={select} />
+      {select === '인기' && <TodayLank category={select} />}
+      <TodaySurge category={select} />
     </>
   )
 }

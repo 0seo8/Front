@@ -16,71 +16,69 @@ const NavBottom = () => {
   const location = useLocation()
   const currentPath = location.pathname
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 ">
-      <nav className="relative z-40">
-        <ul className="flex flex-wrap bg-neutral-100 justify-between pt-1 pb-4 pl-5 pr-5 items-center">
-          <li>
-            <Link
-              to="/category"
-              className={cls(
-                'flex items-center flex-col ',
-                currentPath === '/category' ? 'text-primary' : '',
-              )}
-            >
-              {currentPath === '/category' ? (
-                <CategoryIconOn />
-              ) : (
-                <CategoryIcon />
-              )}
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/oneul"
-              className={cls(
-                'flex items-center flex-col  ',
-                currentPath === '/oneul' ? 'text-primary' : '',
-              )}
-            >
-              {currentPath === '/oneul' ? <OnulIconOn /> : <OnulIcon />}
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/"
-              className={cls(
-                'flex items-center flex-col  ',
-                currentPath === '/' ? 'text-primary' : '',
-              )}
-            >
-              {currentPath === '/' ? <HomeIconOn /> : <HomeIcon />}
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/like"
-              className={cls(
-                'flex items-center flex-col  ',
-                currentPath === '/like' ? 'text-primary' : '',
-              )}
-            >
-              {currentPath === '/like' ? <LikeIconOn /> : <LikeIcon />}
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/my"
-              className={cls(
-                'flex items-center flex-col  ',
-                currentPath === '/my' ? 'text-primary' : '',
-              )}
-            >
-              {currentPath === '/my' ? <MyIconOn /> : <MyIcon />}
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav className="h-[70px] fixed bottom-0 left-0 right-0 z-10">
+      <ul className="h-[70px] flex flex-wrap bg-neutral-100 justify-between pt-1 pb-4 pl-5 pr-5 items-center">
+        <li>
+          <Link
+            to="/category"
+            className={cls(
+              'flex items-center flex-col ',
+              currentPath === '/category' ? 'text-primary' : '',
+            )}
+          >
+            {currentPath === '/category' ? (
+              <CategoryIconOn />
+            ) : (
+              <CategoryIcon />
+            )}
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/oneul"
+            className={cls(
+              'flex items-center flex-col  ',
+              currentPath === '/oneul' ? 'text-primary' : '',
+            )}
+          >
+            {currentPath === '/oneul' ? <OnulIconOn /> : <OnulIcon />}
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/"
+            className={cls(
+              'flex items-center flex-col  ',
+              currentPath === '/' ? 'text-primary' : '',
+            )}
+          >
+            {currentPath === '/' ? <HomeIconOn /> : <HomeIcon />}
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/like"
+            className={cls(
+              'flex items-center flex-col  ',
+              currentPath === '/like' ? 'text-primary' : '',
+            )}
+          >
+            {currentPath === '/like' ? <LikeIconOn /> : <LikeIcon />}
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/my"
+            className={cls(
+              'flex items-center flex-col  ',
+              currentPath === '/my' ? 'text-primary' : '',
+            )}
+          >
+            {currentPath === '/my' ? <MyIconOn /> : <MyIcon />}
+          </Link>
+        </li>
+      </ul>
+    </nav>
   )
 }
 

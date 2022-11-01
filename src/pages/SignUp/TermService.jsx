@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import NextBtn from '../../components/SignUp/NextBtn'
+import NextBtn from '../../components/common/NextBtn'
 import allNotChecked from '/public/assets/allNotCheck.svg'
 import allChecked from '/public/assets/allCheck.svg'
-import { accepts } from '~/utils/accepts.js'
+import { accepts } from '~/dummy/accepts.js'
 import { TermCard } from './TermCard'
 
 const TermService = () => {
@@ -47,7 +47,9 @@ const TermService = () => {
         </div>
       </div>
       {/* NextBtn에 disabled를 true로 넘기면 버튼 활성화되어요! */}
-      <NextBtn next="idform" disabled={useAccept && userDataAccept} />
+      <NextBtn next="idform" disabled={useAccept && userDataAccept}>
+        다음
+      </NextBtn>
     </div>
   )
 }
